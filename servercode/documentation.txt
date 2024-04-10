@@ -1,0 +1,63 @@
+to study:
+typescript
+express
+res.cookie concepts
+async js
+services and controller folder structure
+
+
+in errorhandler.ts 
+we are using class (ie oops) object oriented so that using that object we can call class wherever we need to handle error throughout the project
+extends error (here error is like function name )so we can call it anywhere
+
+and here we are using naming convention for file like (user.model.ts) here user is the entity that is 
+it has user related entity and 
+model is the file that has model in it
+
+password is hashed before storing in db by bcrypt
+
+in user.model server sends 2 cookies (refreshtoken and accesstoken)
+access token is expired in 5min
+and refresh token will take long time
+when access token is going to expire then our refresh token automatically generates access token
+so due to repeated changes in access token it is highly secured
+to get new access token by refresh token we will be hitting new api line GET/api/user/refresh
+
+
+user controller and user route is for api work both are inter related
+
+facebook and instagram uses this type of authentication by refreshing access token every 5min
+
+Cloudinary is a cloud-based service that provides end-to-end image and video management solutions. It offers a comprehensive platform for storing, managing, optimizing, and delivering media assets (such as images and videos) to web and mobile applications.
+
+interface IComment extends Document-->here document mentions the mongodb document
+
+mysql-->mongodb
+table-->collection
+row(or)record-->Document
+mysql server-->cluster
+
+            minlength:[6,"Password should contain atleast 6 characters"],
+            select:false,
+    these are validation constraints in mongodb no typescript property
+
+what is the purpose of services folder file:
+In a typical web application architecture following the MVC (Model-View-Controller) pattern, the course.service.ts file would likely contain the business logic related to handling courses. Here's the purpose of such a file:
+Separation of Concerns: 
+
+
+if we use redis:
+we will add all the user in redis and it will obviously slow down when we have large no.of user
+so if the user is not comming to website for 7 days then we will delete their data from redis,
+so the user whose data in redis will get faster data,
+if the user comes after 1 month then we will ask the user to login by saying your session is expired
+then when they login we will again set session in redis
+
+mdb -material design for bootstrap
+
+difficulties:
+1)passing activationToken from signup to verify page
+
+
+
+Awaiting Response: The await keyword is used before axios.get() to indicate that JavaScript should wait for the HTTP request to complete and for the response to be received before continuing execution. This is because HTTP requests are asynchronous operations, and await allows you to write asynchronous code in a synchronous style.

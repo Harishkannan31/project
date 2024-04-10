@@ -1,0 +1,22 @@
+.coursebutton{
+  margin-left: 25px;
+}
+.editbutton{
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+  background-color: #0d6efd;
+}
+.card-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+}
+
+.card-element{
+  padding: 20px;
+  }
+.card-wrapper{
+  margin-bottom: 30px;
+}
